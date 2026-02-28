@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+\usepackage{tempora}
+\usepackage{longtable}
+\usepackage{bookmark}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage{kpfonts}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\definecolor{firebrick}{HTML}{b22222} 
+\definecolor{darkslategrey}{HTML}{2f4f4f} 
+\definecolor{cornflowerblue}{HTML}{6495ed} 
+\definecolor{mediumslateblue}{HTML}{7b68ee} 
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\hypersetup{
+    colorlinks=true,        % Enable colored links
+    breaklinks=true,        % Allow links to break across lines
+    linkcolor=cornflowerblue,    % Color of internal links
+    urlcolor=cornflowerblue,     % Color of URL links
+    anchorcolor=cornflowerblue,  % Color of anchors
+    citecolor=cornflowerblue,    % Color of citations
+    pdftitle={Lavrinovich Resume},    % Title of the PDF
+    pdfauthor={Anna Lavrinovich}, % Author of the PDF
+    bookmarksopen=true,      % Open bookmarks panel at start
+}
+\newcommand{\mytitle}[5]{
+  \begin{center}
+        \Large\textbf{#1}\normalsize \\
+        \Large{#2}\normalsize \\
+        \vspace{5pt}
+        \href{mailto:#3}{#3} \\ 
+        \textbf{#4} \\ 
+        #5
+  \end{center}
+}
+
+\begin{document}
+\mytitle{Лавринович Анна}{Analyst}{lavrinovicanna625@gmail.com}{+375(33)312-06-52}{Минск, Беларусь}
+
+\thispagestyle{empty}
+
+\section*{Образование}
+\begin{longtable}[l]{@{}p{0.2\textwidth} p{0.8\textwidth}}
+    2022 -- 2026
+    
+    4 года
+    & 
+
+    \textbf{БГУ}, Факультет прикладной математики и информатики
+
+    
+    Специализация: математик-программист
+    \vspace{15pt}
+    \\
+
+    2024 
+
+    3 мес
+    &
+    Kaggle learn cources
+
+    Курс по визуализации данных, предобработке признаков. Анализу временных рядов  
+\end{longtable}
+
+\section*{Опыт}
+\begin{longtable}[l]{@{}p{0.2\textwidth} p{0.8\textwidth}}
+    2023 Апр - сейчас 
+    
+    2 года 6 мес
+    & Заместитель главы студенческого союза
+    \begin{itemize}
+        \setlength\baselineskip{0pt}
+        \setlength\itemsep{-3pt}
+        \item Главный организатор студенческих мероприятий, создатель собственного мероприятия, расписываю и делигирую ТЗ, провожу собрания активистов.
+    \end{itemize}
+\end{longtable}
+
+\section*{Навыки}
+
+\begin{itemize}
+    \item Python: Scikit-Learn, numpy, pandas, matplotlib, FastAPI
+    \item CI/CD: Docker, Git, Gitlab, Jira, Bash
+    \item Math: Теория вероятностей, статистика, линейная алгебра, методы оптимизации, математическое моделирование
+    \item Excel, SQL, NOSQL
+    \item English B2
+    % мб еще полезных навыков, но не слишком много
+\end{itemize}
+
+\section*{Достижения}
+\begin{longtable}[l]{@{}p{0.2\textwidth} p{0.8\textwidth}}
+    2025 Окт
+    & 
+    1 место в хакатоне от InDEV Solutions
+
+    Разработали приложение для определения состояния здоровья по фотографии лица.
+    % сюда дописать 
+    \\
+\end{longtable}
+
+\section*{О себе}
+\hspace{15pt}
+% сюда кратенько твои интересы по теме, сильные стороны, мотивацию и заинтересованность
+Мои сильные стороны:
+    \begin{itemize}
+    \item Аналитическое мышление
+    \item Структурность и внимание к деталям
+    \item Ораторское искусство
+    \item Работа в команде
+    \end{itemize}
+Моя мотивация и заинтересованность:
+    Я получаю настоящее удовлетворение, когда моя работа с данными приводит к конкретным, измеримым результатам для бизнеса. Для меня аналитика — это не просто цифры, а инструмент для принятия smart-решений, и я горю желанием развивать этот навык на практике.
+
+\centering
+\rule{0.25\linewidth}{0.4pt}\\
+\medskip
+Last updated: \today
+
+\end{document}
