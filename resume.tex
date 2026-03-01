@@ -12,6 +12,8 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{enumitem}
 \definecolor{firebrick}{HTML}{b22222} 
 \definecolor{darkslategrey}{HTML}{2f4f4f} 
 \definecolor{cornflowerblue}{HTML}{6495ed} 
@@ -31,16 +33,22 @@
 \newcommand{\mytitle}[5]{
   \begin{center}
         \Large\textbf{#1}\normalsize \\
+        \vspace{2pt}
         \Large{#2}\normalsize \\
-        \vspace{5pt}
         \href{mailto:#3}{#3} \\ 
+        \href{https://t.me/a_smurfetta}{Telegram}
+        \hspace{15pt}
+        \href{https://www.linkedin.com/in/nura-lavrinovich-0a426a353/}{Linkedin}
+        \hspace{15pt}
+        \href{https://github.com/annlavra}{Github} \\
+        \vspace{5pt}
         \textbf{#4} \\ 
         #5
   \end{center}
 }
 
 \begin{document}
-\mytitle{Лавринович Анна}{Analyst}{lavrinovicanna625@gmail.com}{+375(33)312-06-52}{Минск, Беларусь}
+\mytitle{Лавринович Анна}{Business Analyst}{lavrinovicanna625@gmail.com}{+375(33)312-06-52}{Минск, Беларусь}
 
 \thispagestyle{empty}
 
@@ -54,7 +62,7 @@
     \textbf{БГУ}, Факультет прикладной математики и информатики
 
     
-    Специализация: математик-программист
+    Квалификация: математик-программист
     \vspace{15pt}
     \\
 
@@ -68,23 +76,45 @@
 \end{longtable}
 
 \section*{Опыт}
+
+\begin{longtable}[l]{@{}p{0.2\textwidth} p{0.8\textwidth}}
+    2026 Янв -- сейчас
+    
+    3 мес
+    & Практика в МТБанке, Бизнесс аналитик
+    \begin{itemize}[before=\setlength{\baselineskip}{0pt}, itemsep=2pt]
+        % \setlength\baselineskip{0pt}
+        % \setlength\itemsep{-3pt}
+        \item Подготовка технической документации и диаграмм бизнесс-процессов (BPMN, UML)
+        \item Сбор и анализ требований для внедрения новых IT систем
+        \item Проведение анализа текущих процессов
+        \item Подготовка бизнесс требований для автоматизации бизнесс-процессов
+        \item Взаимодействие с ключевыми заинтересованными сторонами
+    \end{itemize}
+\end{longtable}
+
 \begin{longtable}[l]{@{}p{0.2\textwidth} p{0.8\textwidth}}
     2023 Апр - сейчас 
     
-    2 года 6 мес
-    & Заместитель главы студенческого союза
-    \begin{itemize}
-        \setlength\baselineskip{0pt}
-        \setlength\itemsep{-3pt}
+    2 года 9 мес
+    & Заместитель главы студенческого союза БГУ
+    \begin{itemize}[before=\setlength{\baselineskip}{0pt}, itemsep=2pt]
+        % \setlength\baselineskip{0pt}
+        % \setlength\itemsep{-3pt}
         \item Главный организатор студенческих мероприятий, создатель собственного мероприятия, расписываю и делигирую ТЗ, провожу собрания активистов.
     \end{itemize}
 \end{longtable}
 
 \section*{Навыки}
 
-\begin{itemize}
-    \item Python: Scikit-Learn, numpy, pandas, matplotlib, FastAPI
-    \item CI/CD: Docker, Git, Gitlab, Jira, Bash
+\begin{itemize}[before=\setlength{\baselineskip}{0pt}, itemsep=2pt]
+    \item Business Process Model and Notation (BPMN)
+    \item Сбор и анализ требований
+    \item Документирование и работа с данными
+    \item Координация и работа с командой
+    \item Анализ эффективности, мониторинг KPI и расчет ROI
+    \item Python: Scikit-Learn, numpy, pandas, matplotlib
+    \item Git, Gitlab, Jira, Bash, Confluence
     \item Math: Теория вероятностей, статистика, линейная алгебра, методы оптимизации, математическое моделирование
     \item Excel, SQL, NOSQL
     \item English B2
@@ -97,8 +127,11 @@
     & 
     1 место в хакатоне от InDEV Solutions
 
-    Разработали приложение для определения состояния здоровья по фотографии лица.
-    % сюда дописать 
+    \begin{itemize}[before=\setlength{\baselineskip}{0pt}, itemsep=2pt]
+    \item Разработали приложение для определения состояния здоровья по фотографии лица.
+    \item Разработала требования к команде, отвечала за коммуникацию.
+    \item Презентавала и защищала итоговое решение.
+    \end{itemize}
     \\
 \end{longtable}
 
@@ -106,12 +139,12 @@
 \hspace{15pt}
 % сюда кратенько твои интересы по теме, сильные стороны, мотивацию и заинтересованность
 Мои сильные стороны:
-    \begin{itemize}
+\begin{itemize}[before=\setlength{\baselineskip}{0pt}, itemsep=2pt]
     \item Аналитическое мышление
     \item Структурность и внимание к деталям
     \item Ораторское искусство
     \item Работа в команде
-    \end{itemize}
+\end{itemize}
 Моя мотивация и заинтересованность:
     Я получаю настоящее удовлетворение, когда моя работа с данными приводит к конкретным, измеримым результатам для бизнеса. Для меня аналитика — это не просто цифры, а инструмент для принятия smart-решений, и я горю желанием развивать этот навык на практике.
 
